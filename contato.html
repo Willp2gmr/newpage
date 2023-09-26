@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Meu Site</title>
+    <link rel="stylesheet" type="text/css" href="./text/layout.css">
+</head>
+
+<body class="conteudo">
+    <!-- Atividade 1: criar a seção 'header' idêntica à da página inicial-->
+    <header>
+        <section class="linha">
+            <img src="./imagens/logo.png" alt="Logo da empresa XPTO" width="250px" />
+
+            <!-- Início do menu do site -->
+            <nav>
+                <ul>
+                    <li>
+                        <a class="botao" href="index.html">
+                            Início
+                        </a>    
+                    </li>
+                    <li>
+                        <a class="botao botao-destaque" href="contato.html">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Fim do Menu do Site -->
+        </section>
+
+    </header>
+    <!-- Inicio do main-->
+    <main class="sobre">
+        <!-- Inicio da section do conteúdo do site-->
+        <section class="agrupamento">
+            <!-- Conteúdo de texto sobre o site -->
+            <article>
+                <h1>Contato</h1>
+                <h2>Landing Page</h2>
+                <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting
+                    industry. Lorem Ipsum has been the industry’s standard 
+                    dummy text
+                    ever since the 1500s, when an unknown printer took a 
+                    galley of type
+                    and</p>
+            </article>
+
+            <div>
+                <fieldset>
+                    <form id="frmInscricao" action="index.html" method="POST">
+                        <label id="negrito" >Nome: </label><br>
+                        <input id="bordas" type="text" required="required" maxlength="100" size="60"><br><br>
+                        <labe id="negrito">Data de Nascimento: </labe><br>
+                        <input id="bordas" type="text" required="required" placeholder="  dd/mm/aaaa" size="60"><br><br>
+                        <label id="negrito">Celular: </label><br>
+                        <input id="bordas" type="cellNumber" required="required" placeholder="  +55 99 9 9999-9999" size="60" id="cellNumber"><br><br>
+
+                        <label id="negrito">E-mail: </label><br>
+                        <input id="bordas" type="email" required="required" size="60" id="txtEmail"><br><br>
+
+                        <!-- Atividade 7: incluir um campo para a mensagem -->
+
+                        <label id="negrito">Menssagem:</label><br>
+                        <textarea id="bordas" cols="62" rows="5" required="required"></textarea><br><br>
+                        <!-- Atividade 8: incluir um botão para enviar o formulário -->
+                        <input class="botao botao-destaque" id="btnEnviar" type="submit" value="Enviar"/>
+                   </form>
+                </fieldset>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <!-- Início das redes Sociais -->
+        <ul class="linha">
+            <li>
+                <a href="#">
+                    <img src="./imagens/logo-insta.png" alt="Instagram" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagens/logo-facebook.png" alt="Facebook" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./imagens/logo-twitter.png" alt="Twitter" />
+                </a>
+            </li>
+        </ul>
+        <!-- Fim das redes sociais -->
+    </footer>
+</body>
+</html>
